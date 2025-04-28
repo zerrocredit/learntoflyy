@@ -18,15 +18,16 @@
     </style>
 </head>
 <body>
-    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-    <div id="game"></div>
-    <script>
-        window.addEventListener("load", (event) => {
-            const ruffle = window.RufflePlayer.newest();
-            const player = ruffle.createPlayer();
-            document.getElementById("game").appendChild(player);
-            player.load("flash_learn-to-fly.swf");
-        });
-    </script>
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+<div id="game" style="width: 800px; height: 600px;"></div>
+<script>
+    window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        document.getElementById("game").appendChild(player);
+        player.load("learntofly/flash_learn-to-fly.swf"); 
+    });
+</script>
+</script>
 </body>
 </html>
